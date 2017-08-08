@@ -1,17 +1,22 @@
 Rails.application.routes.draw do
-  get 'tasks/index'
 
-  get 'tasks/show'
+  # root to: 'pages#about'
 
-  get 'tasks/new'
+  resources :tasks
 
-  get 'tasks/create'
+  # get 'tasks/index'
 
-  get 'tasks/edit'
+  # get 'tasks/show'
 
-  get 'tasks/update'
+  # get 'tasks/new'
 
-  get 'tasks/destroy'
+  # get 'tasks/create'
+
+  # get 'tasks/edit'
+
+  # get 'tasks/update'
+
+  # get 'tasks/destroy'
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
